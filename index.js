@@ -1,9 +1,9 @@
-import { DateTime } from './node_modules/luxon/src/luxon.js';
 import { navigations } from './modules/navigation.js';
 import BookCollection from './modules/collection.js';
+import displayCurrentDate from './date.js';
 
 const date = document.getElementById('date');
-date.innerText = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 
+displayCurrentDate(date);
 navigations();
 BookCollection();
