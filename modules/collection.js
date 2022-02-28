@@ -1,6 +1,5 @@
 const list = document.getElementById('book_list');
 const addBook = document.getElementById('addBook');
-
 export default class BookCollection {
   constructor(booksContainer) {
     this.books = [];
@@ -12,7 +11,11 @@ export default class BookCollection {
   }
 
   addToCollection(data) {
-    const { id, title, author } = data;
+    const {
+      id,
+      title, author,
+    } = data;
+
     this.books.push({
       id,
       title,
@@ -24,7 +27,10 @@ export default class BookCollection {
   }
 
   addToPage(data) {
-    const { id, title, author } = data;
+    const {
+      id,
+      title, author,
+    } = data;
 
     this.booksContainer.innerHTML += `
     <li id ="${id}">
@@ -37,7 +43,6 @@ export default class BookCollection {
       <button class="rmvBook">Remove</button>
     </li>
     `;
-
     this.updateEventListeners(this.booksContainer);
   }
 
@@ -105,4 +110,8 @@ addBook.addEventListener('submit', (e) => {
 
   addBook.title.value = '';
   addBook.author.value = '';
+});
+
+window.addEventListener('load', () => {
+  list.style.display = 'block';
 });
