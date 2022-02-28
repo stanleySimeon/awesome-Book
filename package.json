@@ -1,0 +1,24 @@
+{
+  "name": "awesome-Book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstanley-me/awesome-Book.git"
+  },
+  "keywords": [],
+  "author": "Stanley SIMEON",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstanley-me/awesome-Book/issues"
+  },
+  "homepage": "https://github.com/mstanley-me/awesome-Book#readme",
+  "dependencies": {
+    "luxon": "^2.3.1",
+    "three": "^0.137.5"
+  }
+}
